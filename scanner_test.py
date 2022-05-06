@@ -1,6 +1,3 @@
-#setup a stream (complex floats)
-rxStream = sdr.setupStream(SOAPY_SDR_RX, SOAPY_SDR_CF32)
-sdr.activateStream(rxStream) #start streaming
 import numpy as np
 from matplotlib import pyplot as plt
 import SoapySDR
