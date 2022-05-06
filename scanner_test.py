@@ -10,7 +10,7 @@ from SoapySDR import SOAPY_SDR_RX, SOAPY_SDR_CS16
 rx_chan = 0             # RX1 = 0, RX2 = 1
 N = 16384               # Number of complex samples per transfer
 fs = 1e6            # Radio sample Rate
-freq = 94.5e9            # LO tuning frequency in Hz
+freq = 94.5e7            # LO tuning frequency in Hz
 use_agc = True          # Use or don't use the AGC
 timeout_us = int(5e6)
 rx_bits = 16            # The AIR-T's ADC is 16 bits
@@ -41,7 +41,7 @@ sdr.setFrequency(SOAPY_SDR_RX, 0, 94.5e5)
 
 # Create data buffer and start streaming samples to it
 rx_buff = np.empty(2 * N, np.int16)                 # Create memory buffer for data stream
-rx_stream = sdr.setupStream(SOAPY_SDR_RX, SOAPY_SDR_CS16)  # Setup data stream
+rx_stream = sdr.setupStream(SOAPY_SDR_RX, SOAPY_SDR_CF32)  # Setup data stream
 sdr.activateStream(rx_stream)  # this turns the radio on
 
 # Read the samples from the data buffer
