@@ -10,7 +10,7 @@ from SoapySDR import SOAPY_SDR_RX, SOAPY_SDR_CS16
 rx_chan = 0             # RX1 = 0, RX2 = 1
 N = 16384               # Number of complex samples per transfer
 fs = 1e6            # Radio sample Rate
-freq = 94.5e5            # LO tuning frequency in Hz
+freq = 94.5e9            # LO tuning frequency in Hz
 use_agc = True          # Use or don't use the AGC
 timeout_us = int(5e6)
 rx_bits = 16            # The AIR-T's ADC is 16 bits
