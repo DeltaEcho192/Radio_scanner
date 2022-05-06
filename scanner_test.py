@@ -19,7 +19,7 @@ for freqRange in freqs: print(freqRange)
 
 #apply settings
 sdr.setSampleRate(SOAPY_SDR_RX, 0, 1e6)
-sdr.setFrequency(SOAPY_SDR_RX, 0, 912.3e6)
+sdr.setFrequency(SOAPY_SDR_RX, 0, 94.5e5)
 
 #setup a stream (complex floats)
 rxStream = sdr.setupStream(SOAPY_SDR_RX, SOAPY_SDR_CF32)
