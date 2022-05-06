@@ -1,7 +1,7 @@
 import numpy as np
 from matplotlib import pyplot as plt
 import SoapySDR
-from SoapySDR import SOAPY_SDR_RX, SOAPY_SDR_CS16
+from SoapySDR import SOAPY_SDR_RX, SOAPY_SDR_CF32
 
 ############################################################################################
 # Settings
